@@ -7,11 +7,12 @@ script:
   - docker images richyb/node
 
 before_deploy:
-  - docker login -u "richyb" -p "Da8282pbdocker"
+  - docker login -u richyb -p Da8282pbdocker
 
 deploy:
+  edge: true
   provider: script
   script: docker push richyb1982/node
   on:
     branch: master
-  edge: true
+  
