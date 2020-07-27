@@ -14,3 +14,4 @@ deploy:
   script: docker push richyb1982/node
   on:
     branch: master
+  edge: true
