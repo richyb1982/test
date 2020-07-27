@@ -12,7 +12,7 @@ before_deploy:
 deploy:
   edge: true
   provider: script
-  script: docker push richyb1982/node
+  script: docker push richyb/node
   on:
     branch: master
   
