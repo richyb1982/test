@@ -5,3 +5,12 @@ services:
 script:
   - docker build -t richyb/node .
   - docker images richyb/node
+
+before_deploy:
+  -docker login -u richyb1982 -p GHfaJul272020
+
+deploy:
+  provider: script
+  script: docker push richyb1982/node
+  on:
+    branch: master
