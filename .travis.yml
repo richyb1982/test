@@ -7,7 +7,7 @@ script:
   - docker images richyb/node
 
 before_deploy:
-  -docker login -u richyb1982 -p GHfaJul272020
+  -docker login -u richyb -p Da8282pbdocker
 
 deploy:
   provider: script
